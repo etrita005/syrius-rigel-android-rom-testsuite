@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0183/0184 Wallpaper control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Set home / lock / both wallpaper (solid color test image)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_wallpaper_home_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set HOME wallpaper red (ASR-0183)"/>
+
+            <Button
+                    android:id="@+id/btn_wallpaper_home_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set HOME wallpaper green (ASR-0183)"/>
+
+            <Button
+                    android:id="@+id/btn_wallpaper_lock_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set LOCK wallpaper blue (ASR-0184)"/>
+
+            <Button
+                    android:id="@+id/btn_wallpaper_both_purple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set HOME+LOCK wallpaper purple (ASR-0183/0184)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Query &amp; verification"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_wallpaper_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query wallpaper state (GetWallpaper)"/>
+
+            <Button
+                    android:id="@+id/btn_wallpaper_probe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Local probe: WallpaperManager cross-check"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#33000000"
+            android:fontFamily="monospace"
+            android:scrollbars="vertical"
+            android:textSize="11sp"/>
+</LinearLayout>

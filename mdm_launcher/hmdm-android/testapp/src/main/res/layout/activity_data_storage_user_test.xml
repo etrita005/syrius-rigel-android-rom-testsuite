@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0125/0127/0187/0197/0326/0385/0386 Data &amp; storage &amp; screenshot &amp; user"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0125 App data backup / restore"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_write_data_probe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Write data probe (probe.txt = mdm-data-probe-v1)"/>
+
+            <Button
+                    android:id="@+id/btn_read_data_probe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Read data probe"/>
+
+            <Button
+                    android:id="@+id/btn_backup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Backup App Data (.ab)"/>
+
+            <Button
+                    android:id="@+id/btn_restore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Restore App Data (.ab)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0127 Clear app cache"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_write_cache_probe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Write cache probe (cache_probe.txt)"/>
+
+            <Button
+                    android:id="@+id/btn_check_cache_probe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check cache probe"/>
+
+            <Button
+                    android:id="@+id/btn_clear_cache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear App Cache"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0187 Screenshot / ASR-0197 unmount / ASR-0326 format SD"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_screenshot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Take Screenshot (PNG)"/>
+
+            <Button
+                    android:id="@+id/btn_storage_volumes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List Storage Volumes"/>
+
+            <Button
+                    android:id="@+id/btn_unmount_usb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unmount USB Storage"/>
+
+            <Button
+                    android:id="@+id/btn_format_sd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Format External SD"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0385/0386 User management"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_create_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create User (mdm_test_user)"/>
+
+            <Button
+                    android:id="@+id/btn_list_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List Users (Launcher API)"/>
+
+            <Button
+                    android:id="@+id/btn_list_users_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List Users (local probe)"/>
+
+            <Button
+                    android:id="@+id/btn_delete_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete User (userId=0, expect refuse)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

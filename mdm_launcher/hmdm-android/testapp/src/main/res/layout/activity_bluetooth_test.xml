@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0174/0175/0176/0178/0180/0181 Bluetooth control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Bluetooth on/off &amp; overall status"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_bt_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Bluetooth (SetBlueOpen open=true)"/>
+
+            <Button
+                    android:id="@+id/btn_bt_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Bluetooth (SetBlueOpen open=false)"/>
+
+            <Button
+                    android:id="@+id/btn_bt_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Bluetooth state (IsBlueOpen)"/>
+
+            <Button
+                    android:id="@+id/btn_bt_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Overall status (GetBluetoothStatus)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0180/0181 Forbid discoverable / limited discoverable"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_discoverable_forbid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid discoverable mode (ASR-0180)"/>
+
+            <Button
+                    android:id="@+id/btn_discoverable_allow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow discoverable mode (ASR-0180)"/>
+
+            <Button
+                    android:id="@+id/btn_limited_forbid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid limited discoverable (ASR-0181)"/>
+
+            <Button
+                    android:id="@+id/btn_limited_allow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow limited discoverable (ASR-0181)"/>
+
+            <Button
+                    android:id="@+id/btn_discoverable_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query discoverable forbid (IsDiscoverableForbidden)"/>
+
+            <Button
+                    android:id="@+id/btn_limited_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query limited forbid (IsLimitedDiscoverableForbidden)"/>
+
+            <Button
+                    android:id="@+id/btn_probe_discoverable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: set discoverable &amp; observe revert"/>
+
+            <Button
+                    android:id="@+id/btn_probe_discovery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: start discovery &amp; observe revert"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0174 Bluetooth settings page"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_page_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Bluetooth settings page (ASR-0174)"/>
+
+            <Button
+                    android:id="@+id/btn_page_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Bluetooth settings page (ASR-0174)"/>
+
+            <Button
+                    android:id="@+id/btn_page_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query page state (IsBluetoothPageDisabled)"/>
+
+            <Button
+                    android:id="@+id/btn_probe_open_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: open Bluetooth settings"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0176 Forbid file transfer (BluetoothOpp)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_ft_forbid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid file transfer (ASR-0176)"/>
+
+            <Button
+                    android:id="@+id/btn_ft_allow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow file transfer (ASR-0176)"/>
+
+            <Button
+                    android:id="@+id/btn_ft_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query file transfer (IsBluetoothFileTransferDisabled)"/>
+
+            <Button
+                    android:id="@+id/btn_probe_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: resolve share-via-Bluetooth"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0178 Forbid calls via Bluetooth peripherals (SCO)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_sco_forbid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid BT peripheral calls (ASR-0178)"/>
+
+            <Button
+                    android:id="@+id/btn_sco_allow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow BT peripheral calls (ASR-0178)"/>
+
+            <Button
+                    android:id="@+id/btn_sco_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query SCO policy (IsScoCallDisabled)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0175 Connection black/white list (disconnect + pairing)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_access_mode_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Policy mode OFF (ASR-0175)"/>
+
+            <Button
+                    android:id="@+id/btn_access_mode_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Policy mode WHITELIST (ASR-0175)"/>
+
+            <Button
+                    android:id="@+id/btn_access_mode_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Policy mode BLACKLIST (ASR-0175)"/>
+
+            <Button
+                    android:id="@+id/btn_address_whitelist_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set address whitelist (bonded / sample)"/>
+
+            <Button
+                    android:id="@+id/btn_address_blacklist_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set address blacklist (bonded / sample)"/>
+
+            <Button
+                    android:id="@+id/btn_name_whitelist_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set name whitelist (HYX-MDM-TEST-DEVICE)"/>
+
+            <Button
+                    android:id="@+id/btn_name_blacklist_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set name blacklist (HYX-MDM-TEST-DEVICE)"/>
+
+            <Button
+                    android:id="@+id/btn_access_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query access policy (GetBluetoothAccessPolicy)"/>
+
+            <Button
+                    android:id="@+id/btn_access_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply access policy now (ApplyBluetoothAccessPolicy)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#33000000"
+            android:fontFamily="monospace"
+            android:scrollbars="vertical"
+            android:textSize="11sp"/>
+</LinearLayout>

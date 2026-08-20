@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Default launcher change lock (ASR-0091)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_launcher_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lock default launcher change"/>
+
+            <Button
+                    android:id="@+id/btn_launcher_unlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock default launcher change"/>
+
+            <Button
+                    android:id="@+id/btn_launcher_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query launcher change lock"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Default video player (ASR-0095)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_pkg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="package name, e.g. com.android.gallery3d"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:id="@+id/et_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="activity class (optional, auto-resolved)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_video_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set default video player"/>
+
+            <Button
+                    android:id="@+id/btn_video_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get default video player"/>
+
+            <Button
+                    android:id="@+id/btn_video_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear video player binding"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Default app for file type (ASR-0102)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_mime_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MIME type, e.g. application/pdf"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_filetype_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set default app for entered MIME type"/>
+
+            <Button
+                    android:id="@+id/btn_filetype_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get default app for entered MIME type"/>
+
+            <Button
+                    android:id="@+id/btn_filetype_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear file-type binding"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

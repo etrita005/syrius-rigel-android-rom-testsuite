@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Uninstall whitelist / blacklist (ASR-0006/0007)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_pkg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="package name, e.g. com.hmdm.testapp"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_uninstall_whitelist_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to uninstall whitelist (block uninstall)"/>
+
+            <Button
+                    android:id="@+id/btn_uninstall_whitelist_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove from uninstall whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_uninstall_whitelist_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get uninstall whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_uninstall_blacklist_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to uninstall blacklist (block uninstall)"/>
+
+            <Button
+                    android:id="@+id/btn_uninstall_blacklist_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove from uninstall blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_uninstall_blacklist_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get uninstall blacklist"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Install policy mode (ASR-0010)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_install_mode_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mode 1 = whitelist (ASR-0009, protect matched)"/>
+
+            <Button
+                    android:id="@+id/btn_install_mode_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mode 2 = blacklist (ASR-0010, auto-uninstall matched)"/>
+
+            <Button
+                    android:id="@+id/btn_install_mode_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mode 0 = off"/>
+
+            <Button
+                    android:id="@+id/btn_install_mode_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get install policy mode"/>
+
+            <EditText
+                    android:id="@+id/et_regex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="regex, e.g. com\\.example\\..*"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_install_blacklist_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add regex to install blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_install_blacklist_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove regex from install blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_install_blacklist_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get install blacklist regexes"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Keep-alive switch (ASR-0015)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_keep_alive_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable keep-alive for entered package"/>
+
+            <Button
+                    android:id="@+id/btn_keep_alive_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable keep-alive for entered package"/>
+
+            <Button
+                    android:id="@+id/btn_keep_alive_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query keep-alive of entered package"/>
+
+            <Button
+                    android:id="@+id/btn_keep_alive_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get keep-alive list"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="App alive / storage permission / icon / PackageInfo"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_app_alive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is entered app alive (ASR-0029)"/>
+
+            <Button
+                    android:id="@+id/btn_manage_storage_grant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grant MANAGE_EXTERNAL_STORAGE (ASR-0040)"/>
+
+            <Button
+                    android:id="@+id/btn_manage_storage_revoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revoke MANAGE_EXTERNAL_STORAGE (ASR-0040)"/>
+
+            <Button
+                    android:id="@+id/btn_manage_storage_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query MANAGE_EXTERNAL_STORAGE state"/>
+
+            <Button
+                    android:id="@+id/btn_icon_hide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hide desktop icon (ASR-0072)"/>
+
+            <Button
+                    android:id="@+id/btn_icon_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show desktop icon (ASR-0072)"/>
+
+            <Button
+                    android:id="@+id/btn_icon_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query icon hidden state"/>
+
+            <Button
+                    android:id="@+id/btn_package_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get PackageInfo (ASR-0073)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

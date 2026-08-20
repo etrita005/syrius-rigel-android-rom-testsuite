@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0207 / ASR-0369 Camera &amp; microphone control"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_camera_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Camera Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_camera_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Camera Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_camera_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Camera Status"/>
+
+            <Button
+                    android:id="@+id/btn_camera_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Try Open Camera"/>
+
+            <Button
+                    android:id="@+id/btn_mic_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Microphone Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_mic_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Microphone Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_mic_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Microphone Status"/>
+
+            <Button
+                    android:id="@+id/btn_mic_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Try Record Audio"/>
+
+            <Button
+                    android:id="@+id/btn_request_sensor_permissions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request CAMERA/RECORD_AUDIO permissions"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

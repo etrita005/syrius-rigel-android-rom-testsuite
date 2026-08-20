@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0150/0152/0153/0155/0158/0160/0168 WLAN control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0150 AP config lockdown (DISALLOW_CONFIG_WIFI, ASR-0141/0155 engine)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_ap_config_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set AP Config Lockdown"/>
+
+            <Button
+                    android:id="@+id/btn_ap_config_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set AP Config Allowed"/>
+
+            <Button
+                    android:id="@+id/btn_ap_config_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query AP Config Lockdown State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0152 Enterprise Wi-Fi SSID allowlist (setWifiSsidPolicy, sample [HYX-MDM-WIFI])"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_whitelist_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set SSID Whitelist (sample)"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_whitelist_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear SSID Whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_whitelist_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query SSID Whitelist"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0153 Manual network add (DISALLOW_ADD_WIFI_CONFIG)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_manual_add_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Manual Add Wifi Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_manual_add_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Manual Add Wifi Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_manual_add_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Manual Add State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0155 Edit WLAN settings (DISALLOW_CONFIG_WIFI, ASR-0141 same engine)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_edit_wlan_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Edit WLAN Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_edit_wlan_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Edit WLAN Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_edit_wlan_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Edit WLAN State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0158 Minimum Wi-Fi security level (setMinimumRequiredWifiSecurityLevel)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_security_level_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Security Level OPEN (0)"/>
+
+            <Button
+                    android:id="@+id/btn_security_level_personal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Security Level PERSONAL (1)"/>
+
+            <Button
+                    android:id="@+id/btn_security_level_eap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Security Level ENTERPRISE_EAP (2)"/>
+
+            <Button
+                    android:id="@+id/btn_security_level_192"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Security Level ENTERPRISE_192 (3)"/>
+
+            <Button
+                    android:id="@+id/btn_security_level_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Security Level"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0160 WLAN direct (DISALLOW_WIFI_DIRECT)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_direct_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set WLAN Direct Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_direct_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set WLAN Direct Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_direct_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query WLAN Direct State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0168 Hotspot config (DISALLOW_CONFIG_TETHERING)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_tethering_config_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Hotspot Config Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_tethering_config_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Hotspot Config Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_tethering_config_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Hotspot Config State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Real framework enforcement checks"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_try_add_wifi_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Try Add Wifi Network (expect SecurityException when lockdown on)"/>
+
+            <Button
+                    android:id="@+id/btn_try_connect_open_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Try Connect Open Wifi (Syrius_Guest, allowlist/security check)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

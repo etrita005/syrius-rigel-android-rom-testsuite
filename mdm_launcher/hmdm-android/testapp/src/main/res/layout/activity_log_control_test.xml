@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0189 / ASR-0190 Log buffer size &amp; log level"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_log_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Buffer size (e.g. 1M / 512K / 16777216)"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:id="@+id/et_log_buffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Buffer: main / system / crash / all (default all)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_log_buf_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Log Buffer Size"/>
+
+            <Button
+                    android:id="@+id/btn_log_buf_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Log Buffer Sizes"/>
+
+            <EditText
+                    android:id="@+id/et_log_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Log tag (e.g. HYX_MDM_TEST)"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:id="@+id/et_log_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Log level V/D/I/W/E/F/S (empty or R to reset)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_log_level_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Log Level"/>
+
+            <Button
+                    android:id="@+id/btn_log_level_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Log Level"/>
+
+            <Button
+                    android:id="@+id/btn_log_emit_verbose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Emit V/D logs with tag"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

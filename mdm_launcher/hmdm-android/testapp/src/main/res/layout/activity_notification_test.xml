@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0053 Enable/disable notifications per package"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_package"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Target package name (e.g. com.hmdm.testapp)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable target package notifications"/>
+
+            <Button
+                    android:id="@+id/btn_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable target package notifications"/>
+
+            <Button
+                    android:id="@+id/btn_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query target package notification status"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="ASR-0054/0055 Whitelist / Blacklist"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Whitelist packages (comma-separated, replaces whole list)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_set_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_get_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get whitelist"/>
+
+            <EditText
+                    android:id="@+id/et_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blacklist packages (comma-separated, replaces whole list)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_set_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_get_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get blacklist"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Policy mode (0=off, 1=whitelist, 2=blacklist)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Policy mode 0/1/2"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/btn_set_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set policy mode (apply now)"/>
+
+            <Button
+                    android:id="@+id/btn_get_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get policy mode"/>
+
+            <Button
+                    android:id="@+id/btn_apply_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply policy to all apps"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="ASR-0057 Lockscreen notifications"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_lockscreen_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable lockscreen notifications"/>
+
+            <Button
+                    android:id="@+id/btn_lockscreen_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable lockscreen notifications"/>
+
+            <Button
+                    android:id="@+id/btn_lockscreen_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query lockscreen notification status"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="ASR-0059 Status bar notifications"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_statusbar_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable status bar notification icons"/>
+
+            <Button
+                    android:id="@+id/btn_statusbar_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable status bar notification icons"/>
+
+            <Button
+                    android:id="@+id/btn_statusbar_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query status bar notification state"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Own test notification"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_request_permission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request POST_NOTIFICATIONS permission"/>
+
+            <Button
+                    android:id="@+id/btn_send_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send own test notification"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

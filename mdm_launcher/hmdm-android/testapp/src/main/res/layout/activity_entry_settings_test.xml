@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entry / settings locking (2026-08-07 batch)"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="App permission pages (ASR-0048/0049)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_set_permission_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is app permission page disabled (ASR-0048)"/>
+
+            <Button
+                    android:id="@+id/btn_set_spec_permission_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is specified-app permission page disabled (ASR-0049)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Notification management / user modification locks (ASR-0058/0062/0063/0064/0065)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_set_app_notification_ui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is app notification UI disabled (ASR-0058)"/>
+
+            <Button
+                    android:id="@+id/btn_set_whitelist_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is notification whitelist close lock (ASR-0062)"/>
+
+            <Button
+                    android:id="@+id/btn_set_user_notification_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is user notification settings disabled (ASR-0063)"/>
+
+            <Button
+                    android:id="@+id/btn_set_statusbar_setting_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is status bar notification setting lock (ASR-0064)"/>
+
+            <Button
+                    android:id="@+id/btn_set_lockscreen_setting_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is lockscreen notification setting lock (ASR-0065)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="App management page (ASR-0066/0067/0068)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_set_app_management_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is app management page disabled (ASR-0066)"/>
+
+            <Button
+                    android:id="@+id/btn_set_app_mgmt_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Get app management policy mode (ASR-0067/0068)"/>
+
+            <Button
+                    android:id="@+id/btn_set_app_mgmt_lists"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Get app management whitelist/blacklist + apply (ASR-0067/0068)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Accessibility (ASR-0076/0077)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_get_enabled_accessibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query enabled accessibility services (ASR-0076)"/>
+
+            <Button
+                    android:id="@+id/btn_set_accessibility_ui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is accessibility UI entry disabled (ASR-0077)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Default app setting locks (ASR-0086/0088/0093/0100)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_set_sms_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is SMS app setting lock (ASR-0086)"/>
+
+            <Button
+                    android:id="@+id/btn_set_dialer_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is dialer app setting lock (ASR-0088)"/>
+
+            <Button
+                    android:id="@+id/btn_set_assistant_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is Assistant modification lock (ASR-0093)"/>
+
+            <Button
+                    android:id="@+id/btn_set_browser_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is default browser modification lock (ASR-0100)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="USB / APN / airplane / language / speaker (ASR-0199/0203/0308/0322/0334/0335/0370)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_set_usb_settings_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is USB settings lock (ASR-0199)"/>
+
+            <Button
+                    android:id="@+id/btn_set_usb_debugging_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is USB debugging setting lock (ASR-0203)"/>
+
+            <Button
+                    android:id="@+id/btn_set_apn_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is APN settings enabled (ASR-0308)"/>
+
+            <Button
+                    android:id="@+id/btn_set_airplane_locked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is user airplane mode change lock (ASR-0322)"/>
+
+            <Button
+                    android:id="@+id/btn_set_language_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is language switching disabled (ASR-0334)"/>
+
+            <Button
+                    android:id="@+id/btn_set_user_language_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is user language modification disabled (ASR-0335)"/>
+
+            <Button
+                    android:id="@+id/btn_set_speaker_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set/Is speaker disabled (ASR-0370)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Local probes &amp; verification"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_probe_entries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Local probe: resolve settings pages / role request / values"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#33000000"
+            android:fontFamily="monospace"
+            android:scrollbars="vertical"
+            android:textSize="11sp"/>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0424 Wired NIC (Ethernet) configuration"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0424 Interface selection"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_ethernet_iface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="iface (optional, default first available / eth0)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0424 Static config fields (used by the static buttons)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_ethernet_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ipAddress (e.g. 192.168.10.100)"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:id="@+id/et_ethernet_prefix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="prefixLength (0-32, e.g. 24)"
+                    android:inputType="number"/>
+
+            <EditText
+                    android:id="@+id/et_ethernet_gateway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="gateway (e.g. 192.168.10.1)"/>
+
+            <EditText
+                    android:id="@+id/et_ethernet_dns1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="dns1 (e.g. 8.8.8.8)"/>
+
+            <EditText
+                    android:id="@+id/et_ethernet_dns2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="dns2 (optional, e.g. 8.8.4.4)"/>
+
+            <Button
+                    android:id="@+id/btn_ethernet_dhcp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set DHCP config (SetEthernetConfig mode=dhcp)"/>
+
+            <Button
+                    android:id="@+id/btn_ethernet_static"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set STATIC config (from the fields above)"/>
+
+            <Button
+                    android:id="@+id/btn_ethernet_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Ethernet config (GetEthernetConfig)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0424 Ethernet stack enable / disable"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_ethernet_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Ethernet (SetEthernetEnabled enabled=true)"/>
+
+            <Button
+                    android:id="@+id/btn_ethernet_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Ethernet (SetEthernetEnabled enabled=false)"/>
+
+            <Button
+                    android:id="@+id/btn_ethernet_is_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is Ethernet enabled (IsEthernetEnabled)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

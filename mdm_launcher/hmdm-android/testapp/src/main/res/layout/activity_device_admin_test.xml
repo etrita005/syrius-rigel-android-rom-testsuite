@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0080/0081/0083/0085 Device management"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0080/0081 Device admin activate/deactivate (own TestAdminReceiver)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_admin_activate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Activate Own Admin (non-interactive)"/>
+
+            <Button
+                    android:id="@+id/btn_admin_force"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Force Activate Own Admin"/>
+
+            <Button
+                    android:id="@+id/btn_admin_deactivate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deactivate Own Admin"/>
+
+            <Button
+                    android:id="@+id/btn_admin_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Own Admin (Launcher API)"/>
+
+            <Button
+                    android:id="@+id/btn_admin_query_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Own Admin (local dpm.isAdminActive)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0083 Device owner (delete rewrites /data/system/device_owner_2.xml)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_do_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Device Owner"/>
+
+            <Button
+                    android:id="@+id/btn_do_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Device Owner"/>
+
+            <Button
+                    android:id="@+id/btn_do_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Device Owner (com.hmdm.launcher)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0085 Profile owner (user 0; test-user flows via IPC)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_po_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Profile Owner"/>
+
+            <Button
+                    android:id="@+id/btn_po_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Profile Owner (user 0, post-setup demo)"/>
+
+            <Button
+                    android:id="@+id/btn_po_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Profile Owner"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0124/0129/0132/0128/0130 Account &amp; backup &amp; sync control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0124 System backup (DISALLOW_BACKUP)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_backup_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Backup Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_backup_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Backup Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_backup_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Backup State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0129 Google accounts (DISALLOW_MODIFY_ACCOUNTS + remove)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_accounts_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Google Accounts Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_accounts_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Google Accounts Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_accounts_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Google Accounts State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0132 Google backup &amp; restore (backup_enabled / backup_auto_restore)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_backup_restore_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Backup &amp; Restore Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_backup_restore_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Backup &amp; Restore Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_backup_restore_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Backup &amp; Restore State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0128 Auto sync (master sync switch)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_auto_sync_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Auto Sync Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_auto_sync_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Auto Sync Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_auto_sync_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Auto Sync State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0130 Google account auto sync (per-account syncAutomatically)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_google_account_sync_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Google Account Sync Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_google_account_sync_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Google Account Sync Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_google_account_sync_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Google Account Sync State"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>
