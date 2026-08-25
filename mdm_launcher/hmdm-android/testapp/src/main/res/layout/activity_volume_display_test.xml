@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User volume setting lock (ASR-0390)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_user_volume_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable user volume setting"/>
+
+            <Button
+                    android:id="@+id/btn_user_volume_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable user volume setting"/>
+
+            <Button
+                    android:id="@+id/btn_user_volume_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query user volume setting lock"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Volume physical keys lock (ASR-0391)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_key_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable volume keys"/>
+
+            <Button
+                    android:id="@+id/btn_key_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable volume keys"/>
+
+            <Button
+                    android:id="@+id/btn_key_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query volume key lock"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Media volume modification lock (ASR-0393)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_media_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lock media volume"/>
+
+            <Button
+                    android:id="@+id/btn_media_unlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock media volume"/>
+
+            <Button
+                    android:id="@+id/btn_media_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query media volume lock"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Notification volume modification lock (ASR-0395)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_notification_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lock notification volume"/>
+
+            <Button
+                    android:id="@+id/btn_notification_unlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock notification volume"/>
+
+            <Button
+                    android:id="@+id/btn_notification_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query notification volume lock"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Alarm volume modification lock (ASR-0397)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_alarm_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lock alarm volume"/>
+
+            <Button
+                    android:id="@+id/btn_alarm_unlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock alarm volume"/>
+
+            <Button
+                    android:id="@+id/btn_alarm_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query alarm volume lock"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Auto sleep switch (ASR-0412)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_auto_sleep_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable auto sleep (never sleep)"/>
+
+            <Button
+                    android:id="@+id/btn_auto_sleep_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable auto sleep (restore timeout)"/>
+
+            <Button
+                    android:id="@+id/btn_auto_sleep_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query auto sleep state"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Always fullscreen (ASR-0431)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_fullscreen_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable always fullscreen"/>
+
+            <Button
+                    android:id="@+id/btn_fullscreen_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable always fullscreen"/>
+
+            <Button
+                    android:id="@+id/btn_fullscreen_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query fullscreen state"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

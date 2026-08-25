@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query filters (optional)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_package"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="package name (empty = all apps)"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:id="@+id/et_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="days (traffic default 1, runtime default 7)"
+                    android:inputType="number"/>
+
+            <EditText
+                    android:id="@+id/et_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="network for traffic: all/wifi/mobile (default all)"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:id="@+id/et_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="result limit (default 30, battery default 20)"
+                    android:inputType="number"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="ASR-0139 traffic / ASR-0372 battery / ASR-0021 runtime"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_query_traffic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query per-app traffic (ASR-0139)"/>
+
+            <Button
+                    android:id="@+id/btn_query_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query per-app battery drain (ASR-0372)"/>
+
+            <Button
+                    android:id="@+id/btn_query_runtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query per-app foreground runtime (ASR-0021)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="ASR-0022 running apps / ASR-0023 abnormal runtime"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_query_running"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query running app processes (ASR-0022)"/>
+
+            <Button
+                    android:id="@+id/btn_query_crash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query crash/ANR history (ASR-0023)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

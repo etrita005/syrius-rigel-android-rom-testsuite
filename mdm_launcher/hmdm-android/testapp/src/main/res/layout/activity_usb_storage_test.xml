@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="USB data transfer lock (ASR-0191)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_usb_data_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable USB data transfer"/>
+
+            <Button
+                    android:id="@+id/btn_usb_data_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable USB data transfer"/>
+
+            <Button
+                    android:id="@+id/btn_usb_data_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query USB data transfer lock"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="USB external storage lock (ASR-0196)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_usb_ext_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable USB external storage"/>
+
+            <Button
+                    android:id="@+id/btn_usb_ext_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable USB external storage"/>
+
+            <Button
+                    android:id="@+id/btn_usb_ext_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query USB external storage lock"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Data roaming (ASR-0273)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_roaming_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable data roaming"/>
+
+            <Button
+                    android:id="@+id/btn_roaming_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable data roaming"/>
+
+            <Button
+                    android:id="@+id/btn_roaming_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query data roaming state"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="SD card mount lock (ASR-0325)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_sd_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable SD card mount"/>
+
+            <Button
+                    android:id="@+id/btn_sd_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable SD card mount"/>
+
+            <Button
+                    android:id="@+id/btn_sd_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query SD card mount lock"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

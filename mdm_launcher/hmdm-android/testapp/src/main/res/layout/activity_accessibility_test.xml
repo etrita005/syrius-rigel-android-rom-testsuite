@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0074/0075 Accessibility service control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0074 Activate/deactivate own service (com.hmdm.testapp/...TestAccessibilityService)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_service_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Own Accessibility Service"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_service_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Own Accessibility Service"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_service_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Own Accessibility Service"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Full Accessibility State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0075 Policy mode (0=off, 1=whitelist, 2=blacklist)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_policy_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Policy Mode Off"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_policy_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Policy Mode Whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_policy_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Policy Mode Blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_policy_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Policy Mode"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_policy_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Policy Now"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0075 Lists (own service)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_whitelist_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Whitelist (own service)"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_whitelist_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_whitelist_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_blacklist_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Blacklist (own service)"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_blacklist_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_blacklist_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Blacklist"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

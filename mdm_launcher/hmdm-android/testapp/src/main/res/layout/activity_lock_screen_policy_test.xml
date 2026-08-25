@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0359/0363/0365 Lock screen policy"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0359 Required strong auth timeout (ms)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_strong_auth_timeout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="timeoutMs (0 = immediately, e.g. 300000 = 5 min)"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/btn_strong_auth_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Strong Auth Timeout"/>
+
+            <Button
+                    android:id="@+id/btn_strong_auth_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Strong Auth Timeout"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0365 Password expiration grace period (ms)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_password_expiration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="timeoutMs (0 = never, e.g. 86400000 = 1 day)"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/btn_password_expiration_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Password Expiration Timeout"/>
+
+            <Button
+                    android:id="@+id/btn_password_expiration_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Password Expiration Timeout"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0363 Consecutive digit sequence limit (0..16)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_digits_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="limit (0 = unrestricted, e.g. 2)"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/btn_digits_limit_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Consecutive Digits Limit"/>
+
+            <Button
+                    android:id="@+id/btn_digits_limit_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Consecutive Digits Limit"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

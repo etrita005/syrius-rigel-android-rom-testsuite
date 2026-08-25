@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0275/0276/0277/0279/0310/0311/0313/0315/0316/0317/0319/0320/0321/0349 Device state control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0310/0311 Location service"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_location_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Location (save mode, write 0)"/>
+
+            <Button
+                    android:id="@+id/btn_location_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Location (restore saved mode)"/>
+
+            <Button
+                    android:id="@+id/btn_location_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Location State"/>
+
+            <Button
+                    android:id="@+id/btn_location_force_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Force Open Location (10 s corrector)"/>
+
+            <Button
+                    android:id="@+id/btn_location_force_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop Location Force-Open"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0313 Passive location"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_passive_location_forbid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid Passive Location (save mode, write 0)"/>
+
+            <Button
+                    android:id="@+id/btn_passive_location_allow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Passive Location (restore saved mode)"/>
+
+            <Button
+                    android:id="@+id/btn_passive_location_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Passive Location State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0319/0320/0321 Airplane mode"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_airplane_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turn Airplane Mode Off"/>
+
+            <Button
+                    android:id="@+id/btn_airplane_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turn Airplane Mode On"/>
+
+            <Button
+                    android:id="@+id/btn_airplane_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Airplane Mode State"/>
+
+            <Button
+                    android:id="@+id/btn_airplane_force_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Force Open Airplane Mode (10 s corrector)"/>
+
+            <Button
+                    android:id="@+id/btn_airplane_force_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop Airplane Force-Open"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0349 Navigation bar"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_nav_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Navigation Bar (hide)"/>
+
+            <Button
+                    android:id="@+id/btn_nav_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Navigation Bar (show)"/>
+
+            <Button
+                    android:id="@+id/btn_nav_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Navigation Bar State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0315/0316/0317 NFC"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_nfc_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turn NFC Off"/>
+
+            <Button
+                    android:id="@+id/btn_nfc_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turn NFC On"/>
+
+            <Button
+                    android:id="@+id/btn_nfc_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query NFC State"/>
+
+            <Button
+                    android:id="@+id/btn_nfc_force_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Force Open NFC (10 s corrector)"/>
+
+            <Button
+                    android:id="@+id/btn_nfc_force_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop NFC Force-Open"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0275/0276/0277/0279 Mobile data"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turn Mobile Data Off"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turn Mobile Data On"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Mobile Data State"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_force_close_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Force Close Mobile Data (10 s corrector)"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_force_close_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop Mobile Data Force-Close"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_force_open_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Force Open Mobile Data (10 s corrector)"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_force_open_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stop Mobile Data Force-Open"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_lock_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lock Mobile Data State (snapshot + corrector)"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_lock_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unlock Mobile Data State"/>
+
+            <Button
+                    android:id="@+id/btn_mobile_data_lock_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Mobile Data Lock"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

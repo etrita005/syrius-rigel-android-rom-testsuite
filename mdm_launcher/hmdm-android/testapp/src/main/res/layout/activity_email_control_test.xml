@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0423 Email control (application blacklist)"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Policy mode: 0=off (restore), 2=blacklist (suspend + hide listed apps)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_email_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Email Control Enabled (mode=2)"/>
+
+            <Button
+                    android:id="@+id/btn_email_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Email Control Disabled (mode=0)"/>
+
+            <Button
+                    android:id="@+id/btn_email_mode_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Policy Mode"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Blacklist (full replacement, use IPC for a concrete list)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_email_blacklist_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Blacklist (empty via UI)"/>
+
+            <Button
+                    android:id="@+id/btn_email_blacklist_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_email_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Email Policy"/>
+
+            <Button
+                    android:id="@+id/btn_email_controlled_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Controlled (packageName)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

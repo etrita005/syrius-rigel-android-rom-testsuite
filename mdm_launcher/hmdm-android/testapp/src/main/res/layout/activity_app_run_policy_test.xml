@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blocked-running whitelist (ASR-0017)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_block_pkg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="package name, e.g. com.android.gallery3d"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_block_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to blocked-running whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_block_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove from blocked-running whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_block_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get blocked-running whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_block_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query suspended state"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Ignore-battery-optimization whitelist (ASR-0016/0030)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_battery_pkg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="package name, e.g. com.hmdm.testapp"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_battery_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to battery whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_battery_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove from battery whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_battery_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get battery whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_battery_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query ignoring state"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Hide/show specific apps (ASR-0099/0104/0131)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_hide_browser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable system browser (ASR-0099): com.ume.browser"/>
+
+            <Button
+                    android:id="@+id/btn_show_browser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable system browser: com.ume.browser"/>
+
+            <Button
+                    android:id="@+id/btn_show_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Settings (ASR-0104): com.android.settings"/>
+
+            <Button
+                    android:id="@+id/btn_hide_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Settings: com.android.settings"/>
+
+            <Button
+                    android:id="@+id/btn_hide_vending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Play Store (ASR-0131): com.android.vending"/>
+
+            <Button
+                    android:id="@+id/btn_show_vending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Play Store: com.android.vending"/>
+
+            <EditText
+                    android:id="@+id/et_hidden_pkg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="custom package name"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_hide_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hide custom package"/>
+
+            <Button
+                    android:id="@+id/btn_show_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show custom package"/>
+
+            <Button
+                    android:id="@+id/btn_hidden_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query hidden state"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0108/0110/0219/0262/0265/0290/0387/0442 Info queries"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0108 File attribute"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_file_path"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="/sdcard/MDM (or any path)"/>
+
+            <Button
+                    android:id="@+id/btn_get_file_attribute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get File Attribute"/>
+
+            <Button
+                    android:id="@+id/btn_get_file_attribute_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get File Attribute + directory list"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0110 Root status"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_check_root_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check Root Status (Launcher API)"/>
+
+            <Button
+                    android:id="@+id/btn_check_root_status_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check Root Status (local probe)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0219 VPN service status"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_get_vpn_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get VPN Status"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0262 Number attribution"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="phone number, e.g. 13910001234"/>
+
+            <Button
+                    android:id="@+id/btn_query_number_attribution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Number Attribution"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0265 Cell ID / ASR-0290 SIM contacts"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_get_cell_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Cell Info (Launcher API)"/>
+
+            <Button
+                    android:id="@+id/btn_get_cell_info_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Cell Info (local probe)"/>
+
+            <Button
+                    android:id="@+id/btn_get_sim_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get SIM Contacts (Launcher API)"/>
+
+            <Button
+                    android:id="@+id/btn_get_sim_contacts_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get SIM Contacts (local probe)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0387 User list"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_list_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List Users (Launcher API)"/>
+
+            <Button
+                    android:id="@+id/btn_list_users_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List Users (local probe)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0442 WebView provider"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_get_webview_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get WebView Info (Launcher API)"/>
+
+            <Button
+                    android:id="@+id/btn_get_webview_info_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get WebView Info (local probe)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

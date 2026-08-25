@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0166/0204/0205/0314/0345/0407/0426 System settings control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0166 Captive portal dialog"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_captive_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Captive Portal (block dialog)"/>
+
+            <Button
+                    android:id="@+id/btn_captive_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Captive Portal (allow dialog)"/>
+
+            <Button
+                    android:id="@+id/btn_captive_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Captive Portal State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0204 Don't keep activities"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_afa_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid 'Don't keep activities'"/>
+
+            <Button
+                    android:id="@+id/btn_afa_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow 'Don't keep activities'"/>
+
+            <Button
+                    android:id="@+id/btn_afa_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Always-Finish-Activities State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0205 Mock location"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_mock_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid Mock Locations"/>
+
+            <Button
+                    android:id="@+id/btn_mock_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Mock Locations"/>
+
+            <Button
+                    android:id="@+id/btn_mock_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Mock Location State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0314 Location mode"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_location_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location mode: 0=off 1=sensors 2=battery 3=high accuracy"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/btn_location_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Location Mode"/>
+
+            <Button
+                    android:id="@+id/btn_location_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Location Mode"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0407 Font size"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_font_scale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Font scale: 0.5..2.0 (presets 0.85/1.0/1.15/1.30)"
+                    android:inputType="numberDecimal"/>
+
+            <Button
+                    android:id="@+id/btn_font_scale_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Font Scale"/>
+
+            <Button
+                    android:id="@+id/btn_font_scale_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Font Scale"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0345 Gesture navigation"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_gesture_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Gesture Navigation (three-button)"/>
+
+            <Button
+                    android:id="@+id/btn_gesture_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Gesture Navigation"/>
+
+            <Button
+                    android:id="@+id/btn_gesture_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Gesture Navigation State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0426 Window animations"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_anim_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Animations (scales = 0)"/>
+
+            <Button
+                    android:id="@+id/btn_anim_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Animations (scales = 1.0)"/>
+
+            <Button
+                    android:id="@+id/btn_anim_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Animation State"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

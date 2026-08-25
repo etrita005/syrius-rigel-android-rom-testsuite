@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0415/0416/0373/0374/0420 Power / Doze / voice assistant"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0415/0416 Wake / sleep the device (PowerManager.wakeUp/goToSleep)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_wake_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wake device up (WakeUp)"/>
+
+            <Button
+                    android:id="@+id/btn_go_sleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Put device to sleep (GoToSleep)"/>
+
+            <Button
+                    android:id="@+id/btn_power_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query power state (GetPowerState)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0373 Doze (device idle) toggle"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_doze_disabled_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid Doze (SetDozeDisabled disabled=true)"/>
+
+            <Button
+                    android:id="@+id/btn_doze_disabled_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Doze (SetDozeDisabled disabled=false)"/>
+
+            <Button
+                    android:id="@+id/btn_doze_disabled_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Doze state (IsDozeDisabled)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0374 Doze whitelist (ignores battery optimizations)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_doze_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="packageNames, comma separated (e.g. com.hmdm.testapp,com.android.settings)"/>
+
+            <Button
+                    android:id="@+id/btn_doze_whitelist_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Doze Whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_doze_whitelist_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Doze Whitelist (empty list)"/>
+
+            <Button
+                    android:id="@+id/btn_doze_whitelist_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Doze Whitelist"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0420 Voice assistant disable"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_assistant_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable voice assistant (SetVoiceAssistantDisabled disabled=true)"/>
+
+            <Button
+                    android:id="@+id/btn_assistant_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable voice assistant (SetVoiceAssistantDisabled disabled=false)"/>
+
+            <Button
+                    android:id="@+id/btn_assistant_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query voice assistant (IsVoiceAssistantDisabled)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

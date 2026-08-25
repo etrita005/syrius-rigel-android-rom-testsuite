@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0446/0448/0449/0450/0451/0452 OTA interface group"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0446 Check version / download FOTA (config JSON via IPC)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_fota_check_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check FOTA Update"/>
+
+            <Button
+                    android:id="@+id/btn_fota_download_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Download FOTA Package"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0448 SD card / local OTA policy switch"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_local_ota_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Local OTA Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_local_ota_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Local OTA Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_local_ota_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Local OTA Policy"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0447/0449/0450/0451 A/B apply / cancel / suspend / resume / callbacks (config JSON via IPC)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_fota_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply FOTA (A/B engine)"/>
+
+            <Button
+                    android:id="@+id/btn_fota_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel FOTA"/>
+
+            <Button
+                    android:id="@+id/btn_fota_suspend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suspend FOTA"/>
+
+            <Button
+                    android:id="@+id/btn_fota_resume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resume FOTA"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0451 OTA callback consumption (broadcast log)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_get_ota_callback_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get OTA Callback Log"/>
+
+            <Button
+                    android:id="@+id/btn_clear_ota_callback_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear OTA Callback Log"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0452 A/B slot query / switch (switch config JSON via IPC)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_get_slot_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Slot Info"/>
+
+            <Button
+                    android:id="@+id/btn_set_switch_slot_on_reboot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Switch Slot On Reboot"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

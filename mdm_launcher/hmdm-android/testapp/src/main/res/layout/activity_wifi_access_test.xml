@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0144/0145/0147/0148/0151/0161 WLAN config &amp; access control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0144 Configure WLAN params / ASR-0151 enterprise WiFi (WifiManager.addNetwork)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_configure_wpa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Configure WPA2 sample (HYX-MDM-WIFI / HYX@12345)"/>
+
+            <Button
+                    android:id="@+id/btn_configure_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Configure Open sample (HYX-MDM-OPEN)"/>
+
+            <Button
+                    android:id="@+id/btn_configure_eap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Configure Enterprise PEAP sample (HYX-MDM-EAP)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0145 Delete saved hotspot / saved network list"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_remove_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove sample (ssid=HYX-MDM-WIFI)"/>
+
+            <Button
+                    android:id="@+id/btn_list_saved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List Saved Networks"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0147 SSID black/white list (network callback + disconnect)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_mode_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SSID Policy Off (0)"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_mode_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SSID Policy Whitelist (1)"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_mode_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SSID Policy Blacklist (2)"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_whitelist_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SSID Whitelist sample [Syrius_Guest]"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_blacklist_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SSID Blacklist sample [Syrius_Guest]"/>
+
+            <Button
+                    android:id="@+id/btn_ssid_policy_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query SSID Access Policy"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0148 MAC (BSSID) black/white list (network callback + disconnect)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_mac_mode_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAC Policy Off (0)"/>
+
+            <Button
+                    android:id="@+id/btn_mac_mode_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAC Policy Whitelist (1)"/>
+
+            <Button
+                    android:id="@+id/btn_mac_mode_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAC Policy Blacklist (2)"/>
+
+            <Button
+                    android:id="@+id/btn_mac_whitelist_current"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAC Whitelist = current BSSID"/>
+
+            <Button
+                    android:id="@+id/btn_mac_blacklist_current"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAC Blacklist = current BSSID"/>
+
+            <Button
+                    android:id="@+id/btn_mac_policy_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query MAC Access Policy"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0161 Auto-connect policy (enableNetwork / disableNetwork)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_autoconnect_forbid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid Auto-Connect"/>
+
+            <Button
+                    android:id="@+id/btn_autoconnect_allow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Auto-Connect"/>
+
+            <Button
+                    android:id="@+id/btn_autoconnect_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Auto-Connect Policy"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Enforcement"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_apply_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Access Policy Now"/>
+
+            <Button
+                    android:id="@+id/btn_try_connect_open_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Try Connect Open Wifi (Syrius_Guest, policy enforcement probe)"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

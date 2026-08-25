@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Connection status"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_bind_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query connection status (GetZenMode probe)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Test feature groups"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_open_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notification control (ASR-0053/0054/0055/0057/0059)"/>
+
+            <Button
+                    android:id="@+id/btn_open_camera_mic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Camera &amp; microphone control (ASR-0207/0369)"/>
+
+            <Button
+                    android:id="@+id/btn_open_log_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log buffer size &amp; log level (ASR-0189/0190)"/>
+
+            <Button
+                    android:id="@+id/btn_open_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Network access control (ASR-0135/0136)"/>
+
+            <Button
+                    android:id="@+id/btn_open_stats_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stats query: traffic/battery/runtime (ASR-0139/0372/0021-0023)"/>
+
+            <Button
+                    android:id="@+id/btn_open_process_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Process control: kill app / background (ASR-0027/0028)"/>
+
+            <Button
+                    android:id="@+id/btn_open_app_run_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App run policy: blocked run / battery whitelist (ASR-0016/0017/0030/0099/0104/0131)"/>
+
+            <Button
+                    android:id="@+id/btn_open_system_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="System settings: captive portal / animations (ASR-0166/0204/0205/0314/0345/0426)"/>
+
+            <Button
+                    android:id="@+id/btn_open_lock_screen_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lock screen policy: strong auth / expiration / digits (ASR-0359/0363/0365)"/>
+
+            <Button
+                    android:id="@+id/btn_open_account_backup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account &amp; backup: backup / Google accounts (ASR-0124/0129/0132)"/>
+
+            <Button
+                    android:id="@+id/btn_open_accessibility_screenshot_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accessibility shortcut / screenshots / update policy (ASR-0078/0185/0186/0444)"/>
+
+            <Button
+                    android:id="@+id/btn_open_accessibility_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accessibility service control: activate / whitelist / blacklist (ASR-0074/0075)"/>
+
+            <Button
+                    android:id="@+id/btn_open_wifi_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WLAN control: lockdown / whitelist / security level (ASR-0150/0152/0153/0155/0158/0160/0168)"/>
+
+            <Button
+                    android:id="@+id/btn_open_wifi_access"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WLAN config &amp; access: add/remove / SSID+MAC lists / auto-connect (ASR-0144/0145/0147/0148/0151/0161)"/>
+
+            <Button
+                    android:id="@+id/btn_open_device_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Device state: mobile data / location / airplane / nav bar / NFC (ASR-0275/0276/0277/0279/0310/0311/0315/0316/0317/0319/0320/0321/0349)"/>
+
+            <Button
+                    android:id="@+id/btn_open_tethering"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hotspot &amp; sharing: hotspot / USB / Bluetooth / forbid policies (ASR-0167/0169/0398-0405)"/>
+
+            <Button
+                    android:id="@+id/btn_open_permission_appops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Permission &amp; AppOps: PiP / write settings / listener / wifi / USB (ASR-0043/0044/0045/0046/0149)"/>
+
+            <Button
+                    android:id="@+id/btn_open_device_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Device admin: activate / deactivate / DO / PO (ASR-0080/0081/0083/0085)"/>
+
+            <Button
+                    android:id="@+id/btn_open_default_app_component"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Component &amp; default app: enable/disable / SMS / dialer / assistant (ASR-0019/0087/0089/0094)"/>
+
+            <Button
+                    android:id="@+id/btn_open_vpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VPN control: disable / configure / delete / list / disconnect (ASR-0214/0215/0216/0217/0218)"/>
+
+            <Button
+                    android:id="@+id/btn_open_data_storage_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data / storage / screenshot / user: backup / cache / SD / user (ASR-0125/0127/0187/0197/0326/0385/0386)"/>
+
+            <Button
+                    android:id="@+id/btn_open_power_doze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Power / Doze / voice assistant: wake &amp; sleep / Doze toggle &amp; whitelist / assistant (ASR-0415/0416/0373/0374/0420)"/>
+
+            <Button
+                    android:id="@+id/btn_open_ethernet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wired NIC: ethernet config DHCP / static / enable / query (ASR-0424)"/>
+
+            <Button
+                    android:id="@+id/btn_open_bluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bluetooth: discoverable forbid / page / file transfer / SCO / access list (ASR-0174/0175/0176/0178/0180/0181)"/>
+
+            <Button
+                    android:id="@+id/btn_open_wallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wallpaper: set home / lock / both (ASR-0183/0184)"/>
+
+            <Button
+                    android:id="@+id/btn_open_info_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Info queries: file / root / vpn / attribution / cell / SIM contacts / users / webview (ASR-0108/0110/0219/0262/0265/0290/0387/0442)"/>
+
+            <Button
+                    android:id="@+id/btn_open_entry_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entry/settings locking: permission/notification/app-mgmt/accessibility/default-app/USB/APN/airplane/language/speaker (ASR-0048/0049/0058/0062-0068/0076/0077/0086/0088/0093/0100/0199/0203/0308/0322/0334/0335/0370)"/>
+
+            <Button
+                    android:id="@+id/btn_open_email_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email control: blacklist suspend + hide (ASR-0423)"/>
+
+            <Button
+                    android:id="@+id/btn_open_app_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App install/uninstall policy: uninstall lists / install blacklist / keep-alive / alive / storage perm / icon / PackageInfo (ASR-0006/0007/0010/0015/0029/0040/0072/0073)"/>
+
+            <Button
+                    android:id="@+id/btn_open_default_intent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Default intent: launcher lock / video player / file type (ASR-0091/0095/0102)"/>
+
+            <Button
+                    android:id="@+id/btn_open_usb_storage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="USB / storage / SIM: USB data &amp; external storage / SD mount / roaming (ASR-0191/0196/0273/0325)"/>
+
+            <Button
+                    android:id="@+id/btn_open_volume_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Volume / display locks: volume settings &amp; keys / stream locks / auto sleep / fullscreen (ASR-0390/0391/0393/0395/0397/0412/0431)"/>
+
+            <Button
+                    android:id="@+id/btn_open_ota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OTA interface group: check/download FOTA / local OTA policy / cancel / suspend / resume / callbacks / slots (ASR-0446/0448/0449/0450/0451/0452)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Own test notification"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_send_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send own test notification"/>
+
+            <Button
+                    android:id="@+id/btn_request_permission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request POST_NOTIFICATIONS permission"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="adb IPC (equivalent to the buttons above)"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="adb shell am broadcast -n com.hmdm.testapp/.TestCommandReceiver -a com.hmdm.testapp.CMD --es event &lt;event&gt; --es param '&lt;json&gt;'\nSee send_test_command.sh, run ListEvents for the full catalog."
+                    android:textSize="12sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

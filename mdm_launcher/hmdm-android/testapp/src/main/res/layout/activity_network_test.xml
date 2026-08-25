@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0135 Domain black/whitelist"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_domains_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Whitelist domains (comma-separated, replaces whole list)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_set_domain_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set domain whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_get_domain_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get domain whitelist"/>
+
+            <EditText
+                    android:id="@+id/et_domains_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blacklist domains (comma-separated, replaces whole list)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_set_domain_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set domain blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_get_domain_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get domain blacklist"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Domain policy mode (0=off, 1=whitelist, 2=blacklist)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_domain_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Policy mode 0/1/2"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/btn_set_domain_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set domain policy mode (apply now)"/>
+
+            <Button
+                    android:id="@+id/btn_get_domain_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get domain policy mode"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="ASR-0136 IP black/whitelist"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_ips_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Whitelist IPs (comma-separated, exact/CIDR/*, replaces whole list)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_set_ip_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set IP whitelist"/>
+
+            <Button
+                    android:id="@+id/btn_get_ip_whitelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get IP whitelist"/>
+
+            <EditText
+                    android:id="@+id/et_ips_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blacklist IPs (comma-separated, exact/CIDR/*, replaces whole list)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_set_ip_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set IP blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_get_ip_blacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get IP blacklist"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="IP policy mode (0=off, 1=whitelist, 2=blacklist)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_ip_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Policy mode 0/1/2"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/btn_set_ip_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set IP policy mode (apply now)"/>
+
+            <Button
+                    android:id="@+id/btn_get_ip_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get IP policy mode"/>
+
+            <Button
+                    android:id="@+id/btn_firewall_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get firewall status (policy + counters)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Real network verification (traffic goes through the firewall VPN)"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/et_host"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Host for DNS lookup (e.g. example.com)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_dns_lookup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test DNS lookup"/>
+
+            <EditText
+                    android:id="@+id/et_tcp_host"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Host or IP for TCP connect (e.g. 1.1.1.1)"
+                    android:inputType="text"/>
+
+            <EditText
+                    android:id="@+id/et_tcp_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="TCP port (default 80)"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/btn_tcp_connect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test TCP connect"/>
+
+            <EditText
+                    android:id="@+id/et_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="URL for HTTP GET (e.g. http://example.com/ or http://1.1.1.1/)"
+                    android:inputType="text"/>
+
+            <Button
+                    android:id="@+id/btn_http_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test HTTP GET"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

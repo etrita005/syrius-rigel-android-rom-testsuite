@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0043/0044/0045/0046/0149 Permission &amp; AppOps control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0043 Picture-in-picture (OP_PICTURE_IN_PICTURE, targets com.hmdm.testapp)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_pip_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Own Picture-in-Picture"/>
+
+            <Button
+                    android:id="@+id/btn_pip_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Own Picture-in-Picture"/>
+
+            <Button
+                    android:id="@+id/btn_pip_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Own Picture-in-Picture"/>
+
+            <Button
+                    android:id="@+id/btn_pip_probe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: Try Enter Picture-in-Picture"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0044 Write settings (OP_WRITE_SETTINGS, targets com.hmdm.testapp)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_write_settings_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Own Write Settings"/>
+
+            <Button
+                    android:id="@+id/btn_write_settings_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Own Write Settings"/>
+
+            <Button
+                    android:id="@+id/btn_write_settings_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Own Write Settings"/>
+
+            <Button
+                    android:id="@+id/btn_write_settings_probe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: Try Writing a Settings.System Value"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0045 Notification listener access (com.hmdm.testapp/...TestNotificationListenerService)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_listener_grant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grant Own Notification Listener"/>
+
+            <Button
+                    android:id="@+id/btn_listener_revoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revoke Own Notification Listener"/>
+
+            <Button
+                    android:id="@+id/btn_listener_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Own Notification Listener"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0149 WLAN permission blacklist (OP_CHANGE_WIFI_STATE; mode 0=off, 2=blacklist)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_blacklist_mode_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Wifi Permission Policy Off"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_blacklist_mode_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Wifi Permission Policy Blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_blacklist_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Wifi Permission Policy Mode"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_blacklist_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Wifi Permission Blacklist (own app)"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_blacklist_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Wifi Permission Blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_blacklist_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Wifi Permission Blacklist"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_blacklist_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Wifi Permission Policy Now"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_state_probe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: Try Change Wifi State (No-op)"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0046 USB permission (requires an attached USB host device)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_usb_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List Attached USB Devices"/>
+
+            <Button
+                    android:id="@+id/btn_usb_grant_self"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grant USB Permission to Own App (first device)"/>
+
+            <Button
+                    android:id="@+id/btn_usb_check_self"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check Own USB Permission"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

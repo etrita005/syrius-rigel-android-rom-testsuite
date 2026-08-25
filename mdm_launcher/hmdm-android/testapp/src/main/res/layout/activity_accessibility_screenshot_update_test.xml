@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0078/0185/0186/0444 Accessibility shortcut / screenshots / update policy"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0078 Accessibility shortcut (accessibility_shortcut)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_shortcut_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Accessibility Shortcut Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_shortcut_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Accessibility Shortcut Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_a11y_shortcut_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Accessibility Shortcut State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0185/0186 Screenshots (setScreenCaptureDisabled, FLAG_SECURE)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_screenshots_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Screenshots Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_screenshots_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Screenshots Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_screenshots_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Screenshots State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0444 Online FOTA (setSystemUpdatePolicy POSTPONE)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_fota_disabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Online FOTA Disabled"/>
+
+            <Button
+                    android:id="@+id/btn_fota_enabled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Online FOTA Enabled"/>
+
+            <Button
+                    android:id="@+id/btn_fota_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Online FOTA State"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MDM Test App</string>
+    <string name="accessibility_service_description">Test accessibility service used by the ASR-0074/0075 test cases (no-op service).</string>
+</resources>

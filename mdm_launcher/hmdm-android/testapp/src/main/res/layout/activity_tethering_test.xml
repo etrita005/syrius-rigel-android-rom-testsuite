@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0167/0169/0398-0405 Hotspot &amp; network sharing"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0167/0169 Wi-Fi personal hotspot (open/close)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_hotspot_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close Wi-Fi Hotspot"/>
+
+            <Button
+                    android:id="@+id/btn_hotspot_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Open Wi-Fi Hotspot"/>
+
+            <Button
+                    android:id="@+id/btn_hotspot_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Wi-Fi Hotspot"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0401 USB tethering (silent open/close)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_usb_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close USB Tethering"/>
+
+            <Button
+                    android:id="@+id/btn_usb_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Open USB Tethering"/>
+
+            <Button
+                    android:id="@+id/btn_usb_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query USB Tethering"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0404 Bluetooth tethering (silent open/close)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_bt_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close Bluetooth Tethering"/>
+
+            <Button
+                    android:id="@+id/btn_bt_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Open Bluetooth Tethering"/>
+
+            <Button
+                    android:id="@+id/btn_bt_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Bluetooth Tethering"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0398 Network sharing master switch (10 s corrector)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_master_disable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable All Network Sharing"/>
+
+            <Button
+                    android:id="@+id/btn_master_enable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable All Network Sharing"/>
+
+            <Button
+                    android:id="@+id/btn_master_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Network Sharing Disabled"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0399 USB sharing forbid (10 s corrector)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_usb_forbid_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid USB Sharing"/>
+
+            <Button
+                    android:id="@+id/btn_usb_forbid_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow USB Sharing"/>
+
+            <Button
+                    android:id="@+id/btn_usb_forbid_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query USB Sharing Forbidden"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0402 WLAN sharing forbid (10 s corrector)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_forbid_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid WLAN Sharing"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_forbid_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow WLAN Sharing"/>
+
+            <Button
+                    android:id="@+id/btn_wifi_forbid_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query WLAN Sharing Forbidden"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0403 Bluetooth sharing forbid (10 s corrector)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_bt_forbid_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid Bluetooth Sharing"/>
+
+            <Button
+                    android:id="@+id/btn_bt_forbid_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Bluetooth Sharing"/>
+
+            <Button
+                    android:id="@+id/btn_bt_forbid_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Bluetooth Sharing Forbidden"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0400/0405 User config tethering (DISALLOW_CONFIG_TETHERING, ASR-0168 engine)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_user_config_forbid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forbid User Tethering Config"/>
+
+            <Button
+                    android:id="@+id/btn_user_config_allow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow User Tethering Config"/>
+
+            <Button
+                    android:id="@+id/btn_user_config_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query User Tethering Config Restriction"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>

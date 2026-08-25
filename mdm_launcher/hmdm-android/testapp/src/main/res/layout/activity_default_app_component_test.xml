@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASR-0019/0087/0089/0094 Component &amp; default app control"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0019 Component enable/disable (PackageManager setComponentEnabledSetting / setApplicationEnabledSetting, CHANGE_COMPONENT_ENABLED_STATE; targets com.hmdm.testapp)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_comp_disable_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Own Activity Component (StatsQueryTestActivity)"/>
+
+            <Button
+                    android:id="@+id/btn_comp_enable_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Own Activity Component (StatsQueryTestActivity)"/>
+
+            <Button
+                    android:id="@+id/btn_comp_query_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Own Activity Component State"/>
+
+            <Button
+                    android:id="@+id/btn_comp_probe_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: Try Start StatsQueryTestActivity"/>
+
+            <Button
+                    android:id="@+id/btn_comp_disable_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Whole App (setApplicationEnabledSetting)"/>
+
+            <Button
+                    android:id="@+id/btn_comp_enable_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Whole App (setApplicationEnabledSetting)"/>
+
+            <Button
+                    android:id="@+id/btn_comp_query_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Whole App State"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ASR-0087/0089/0094 Default app roles (RoleManager setRoleHolder @SystemApi; framework qualifies the target package)"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btn_sms_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Default SMS App"/>
+
+            <Button
+                    android:id="@+id/btn_sms_set_mms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Default SMS App (com.android.mms)"/>
+
+            <Button
+                    android:id="@+id/btn_sms_set_invalid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Default SMS App (own app, framework rejects)"/>
+
+            <Button
+                    android:id="@+id/btn_dialer_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Default Dialer App"/>
+
+            <Button
+                    android:id="@+id/btn_dialer_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Default Dialer App (com.android.dialer)"/>
+
+            <Button
+                    android:id="@+id/btn_assistant_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Query Default Assistant"/>
+
+            <Button
+                    android:id="@+id/btn_assistant_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Default Assistant (com.mediatek.voicecommand, framework rejects)"/>
+
+            <Button
+                    android:id="@+id/btn_assistant_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Probe: Read Settings.Secure assistant Key"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:text="Log:"
+            android:textSize="12sp"/>
+</LinearLayout>
